@@ -1,0 +1,608 @@
+<!-- =========== -->
+<!-- widget OPEN --><div class="wxy-searchmark-widget" id="wxy-searchmark-widget"> 
+
+	<!-- attach to: adminmenumain --><div class="wxy-searchmark-mobile-menu-btn">S<span class="screen-reader-text">Searchmark</span></div>
+	
+	<!-- ======================================================================================================================== -->
+
+	<!-- +++++++++++++++++ -->
+	<!-- tabs wrapper OPEN --><div class="wxy-searchmark-widget-inner-wrapper">
+	
+		<!-- close handle --><div class="wxy-searchmark-close-handle-btn"></div>
+
+		<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+		
+		<!-- +++++++++++++++ -->
+		<!-- tab header OPEN --><div class="wxy-searchmark-tab-header">
+
+			<!-- menu options wrapper OPEN --><div class="wxy-searchmark-owners-btn-wrapper">
+			
+				<!-- bookmark add btn --><div class="wxy-searchmark-menu-add-bookmark-btn wxy-searchmark-bookmark-image" title="bookmark this page"></div>
+			
+				<!-- select-options holder OPEN --><div class="wxy-searchmark-owners-holder">
+					<div class="wxy-searchmark-owners-btn-label">User&nbsp;&nbsp;</div>
+					<select class="wxy-searchmark-owners-select wxy-searchmark-select-input"></select>
+					<div class="wxy-searchmark-options-btn" title="WXY Bookmarks Options"></div>
+				<!-- select-options holder CLOSE --></div>
+				
+			<!-- menu options wrapper CLOSE --></div>
+		
+			<!-- autosave button --><div class="wxy-searchmark-autosave-btn" title="turn autosave on or off">autosave off</div>
+			<!-- save button --><div id="wxy-searchmark-save-btn" class="wxy-searchmark-save-btn wxy-searchmark-save-btn-disabled" data-saved-label="changes saved" data-unsaved-label="save changes" title="save to database">searchmark updated</div>
+			<!-- close button --><div class="wxy-searchmark-options-menu-close-box"></div>
+		<!-- tab header CLOSE --></div>
+		<!-- ++++++++++++++++ -->
+
+		<!-- =============================================================================== -->
+		
+		<!-- ................ -->
+		<!-- tabs holder OPEN --><div class="wxy-searchmark-tabs-holder">
+		
+			<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+			
+			<!-- ++++++++++++++++ -->
+			<!-- History Tab OPEN --><div class="wxy-searchmark-history-tab wxy-searchmark-tab wxy-searchmark-tab-inactive"><div class="wxy-searchmark-tab-btn-holder" style="left:220px;width:90px;"><div id="wxy-searchmark-history-tab-button" class="wxy-searchmark-tab-btn">History</div><div class="wxy-searchmark-tab-btn-clear-history wxy-searchmark-tab-controls" title="clear all history entries"></div></div>
+			
+				<!-- history searchmark OPEN --><div id="wxy-searchmark-history-tab-entries" class="wxy-searchmark-history-tab-entries wxy-searchmark-tab-content"><!-- [][][][] HISTORY ENTRIES GET ADDED HERE [][][][] --></div>
+
+			<!-- History Tab CLOSE --></div>
+			<!-- +++++++++++++++++ -->
+			
+			<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+		
+			<!-- ++++++++++++++++ -->
+			<!-- sitesearch Tab OPEN --><div class="wxy-searchmark-sitesearch-tab wxy-searchmark-tab wxy-searchmark-tab-inactive"><div class="wxy-searchmark-tab-btn-holder" style="left:128px;width:90px;"><div id="wxy-searchmark-search-tab-button" class="wxy-searchmark-tab-btn">Search</div></div>
+				
+				<!-- sitesearch controls OPEN --><div class="wxy-searchmark-sitesearch-tab-controls wxy-searchmark-search-wrapper"><form id="wxy-searchmark-search-tab-form" name="wxy-searchmark-search-tab-form" class="wxy-searchmark-search-tab-form">
+
+					<!-- keywords input --><input id="searchmark_form_keywords" name="searchmark_form_keywords" class="wxy-searchmark-sitesearch-bar-searchbar-input wxy-searchmark-sitesearch-highlight-input wxy-searchmark-keywords-input" type="text" value=""  data-wxy-form-default="" /><div class="wxy-searchmark-searchbar-clear-btn wxy-searchmark-clear-btn"></div>
+
+					<!-- ================================== -->
+					<!-- extra search controls wrapper OPEN --><div class="wxy-searchmark-extra-search-controls-wrapper">
+						<!-- view results as view urls only --><div class="wxy-searchmark-sitesearch-view-urls-btn">view urls</div>
+						<!-- sitesearch tab controls bookmark button --><div class="wxy-searchmark-sitesearch-tab-bookmark-btn wxy-searchmark-bookmark-this-form-btn">bookmark form</div>
+						<!-- sitesearch tab controls reset button --><div class="wxy-searchmark-sitesearch-tab-reset-btn">reset form</div>
+						<!-- sitesearch search form hide.show btn --><div class="wxy-searchmark-sitesearch-tab-advanced-btn">advanced</div>
+					<!-- extra controls wrapper CLOSE --></div>	
+					<!-- ============================ -->
+					
+					<!-- sitesearch tab controls find button --><div class="wxy-searchmark-sitesearch-tab-find-btn">search</div>
+
+					<!-- ============================ -->
+					<!-- advanced search wrapper OPEN --><div class="wxy-searchmark-advanced-search-wrapper">
+<!-- old positioning -->
+						
+						<!-- which site(s) to search in --><select id="searchmark_form_sites" name="searchmark_form_sites" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-tab-select-sites wxy-searchmark-sitesearch-highlight-input wxy-searchmark-select-input"  data-wxy-form-default="0"></select>
+				
+						<!-- search in location --><select id="searchmark_form_location" name="searchmark_form_location" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-bar-searchbar-select wxy-searchmark-sitesearch-highlight-input wxy-searchmark-select-input" data-wxy-form-default="0"></select>
+						
+						<!-- keyword usage --><select id="searchmark_form_glue" name="searchmark_form_glue" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-bar-searchbar-glue wxy-searchmark-sitesearch-highlight-input wxy-searchmark-select-input" data-wxy-form-default="0">
+							<option value="AND">and match every keyword</option>
+							<option value="OR">and match any keyword</option>
+							<option value="EXACT">and exactly match this phrase</option>
+						</select>
+						
+						<!-- type of post --><select id="searchmark_form_type" name="searchmark_form_type" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-tab-select-type wxy-searchmark-sitesearch-highlight-input wxy-searchmark-select-input" data-wxy-form-default="0"></select>
+						
+						<!-- during which month --><select id="searchmark_form_month" name="searchmark_form_month" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-highlight-input wxy-searchmark-select-input" data-wxy-form-default="0">
+						<option value="all months">from the month of (any)</option>
+						<option value="january">january</option>
+						<option value="february">february</option>
+						<option value="march">march</option>
+						<option value="april">april</option>
+						<option value="may">may</option>
+						<option value="june">june</option>
+						<option value="july">july</option>
+						<option value="august">august</option>
+						<option value="september">september</option>
+						<option value="october">october</option>
+						<option value="november">november</option>
+						<option value="december">december</option>
+					</select>
+					
+					<!-- year to search --><div class="wxy-searchmark-text-input-holder"><div class="wxy-searchmark-sitesearch-tab-year-label">in year&nbsp;&nbsp;</div><input type="text" id="searchmark_form_year" name="searchmark_form_year" value="" class="wxy-searchmark-sitesearch-tab-year wxy-searchmark-sitesearch-highlight-input"  data-wxy-form-default="" /></div>
+					
+					<select id="searchmark_form_status" name="searchmark_form_status" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-highlight-input wxy-searchmark-sitesearch-status-select wxy-searchmark-select-input" data-wxy-form-default="0"></select>
+					<select id="searchmark_form_category" name="searchmark_form_category" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-highlight-input wxy-searchmark-sitesearch-category-select wxy-searchmark-select-input" data-wxy-form-default="0"></select>
+
+					<select id="searchmark_form_author" name="searchmark_form_author" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-highlight-input wxy-searchmark-sitesearch-author-select wxy-searchmark-select-input" data-wxy-form-default="0"></select>
+				
+					<select id="searchmark_form_template" name="searchmark_form_template" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-highlight-input wxy-searchmark-sitesearch-template-select wxy-searchmark-select-input" data-wxy-form-default="0"></select>
+					
+					<!-- tag --><select id="searchmark_form_tag" name="searchmark_form_tag" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-highlight-input wxy-searchmark-sitesearch-tag-select wxy-searchmark-select-input" data-wxy-form-default="0"></select>
+					
+					<!-- ******************** -->
+					<!-- result sorting below -->
+					
+					<!-- +++++++++++++++++++ -->
+					<!-- year to search OPEN --><div class="wxy-searchmark-text-input-holder">
+						
+						<!-- max items label --><div class="wxy-searchmark-sitesearch-tab-limit-label">&nbsp;&nbsp;in groups of&nbsp;</div>
+					
+						<!-- this is the max items per page to request --><input type="text" id="searchmark_form_limit" name="searchmark_form_limit" value="" class="wxy-searchmark-sitesearch-tab-limit wxy-searchmark-sitesearch-highlight-input wxy-searchmark-select-input" data-wxy-form-default="50" />
+					
+						<!-- max items label --><div class="wxy-searchmark-sitesearch-tab-limit-label">&nbsp;from page</div>
+					
+						<!-- this is the current page we are on --><input type="text" id="searchmark_form_page" name="searchmark_form_page" value="" class="wxy-searchmark-sitesearch-tab-page wxy-searchmark-sitesearch-highlight-input wxy-searchmark-select-input" data-wxy-form-default="1" />
+						
+						<!-- year to search CLOSE --></div>
+						<!-- ++++++++++++++++++++ -->
+					
+					
+					<!-- fields to sort by --><select id="searchmark_form_sort" name="searchmark_form_sort" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-highlight-input wxy-searchmark-sitesearch-sort-select wxy-searchmark-select-input" data-wxy-form-default="0">
+						<option value="title" selected>sort results by: title</option>
+						<option value="slug">sort results by:post slug</option>
+						<option value="type">sort results by:post type</option>
+						<option value="modified">sort results by:date modified</option>
+						<option value="date">sort results by:date created</option>
+						<option value="status">sort results by:post status</option>
+						<option value="author">sort results by:post author</option>
+						<option value="category">sort results by:post category</option>
+						<option value="template">sort results by:page template</option>
+						<option value="tag">sort results by:post tag</option>
+						<!-- <option value="meta">post meta</option> -->
+					</select>
+
+
+					<!-- ASC/DESC sort order --><select id="searchmark_form_order" name="searchmark_form_order" class="wxy-searchmark-sitesearch-tab-select wxy-searchmark-sitesearch-highlight-input wxy-searchmark-sitesearch-order-select wxy-searchmark-select-input" data-wxy-form-default="0"><option value="ASC" selected>and display them in ASCENDING order</option><option value="DESC">and display them in DESCENDING order</option></select>
+					
+					
+					<!-- this is the page we were just on --><input type="hidden" id="searchmark_form_use_page" name="searchmark_form_use_page" class="wxy-searchmark-reset-input wxy-searchmark-sitesearch-highlight-input" value=""  data-wxy-form-default="" />
+
+						<!-- advanced search holder CLOSE --></div>
+
+					<!-- sitesearch controls form CLOSE --></form>
+				
+				<!-- sitesearch controls CLOSE --></div>
+
+				<!-- sitesearch links OPEN --><div id="wxy-searchmark-sitesearch-tab-links" class="wxy-searchmark-sitesearch-tab-links wxy-searchmark-tab-content"><!-- [][][][] SITESEARCH GOES HERE [][][][] --></div>			
+					
+			<!-- sitesearch Tab CLOSE --></div>
+			<!-- +++++++++++++++++ -->
+			
+			<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+				
+			<!-- +++++++++++++++ -->
+			<!-- Groups Tab OPEN --><div class="wxy-searchmark-groups-tab wxy-searchmark-tab"><div class="wxy-searchmark-tab-btn-holder wxy-searchmark-groups-tab-btn-holder" style="left:15px;"><div id="wxy-searchmark-groups-tab-button" class="wxy-searchmark-tab-btn">Bookmarks</div><div class="wxy-searchmark-tab-btn-add-group wxy-searchmark-tab-controls" title="add new folder"></div></div>
+	
+				<!-- + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + -->
+						
+				<!-- groups searchmark OPEN --><div id="wxy-searchmark-groups-tab-entries" class="wxy-searchmark-groups-tab-entries">
+
+					<!-- group top drop target --><div class="wxy-searchmark-top-drop-target wxy-searchmark-drop-target"><div class="wxy-searchmark-target-halo-highlight"></div></div>
+					
+					<!-- =================================================================== -->
+				
+					<!-- groups inner holder OPEN --><div id="wxy-searchmark-groups-inner-holder" class="wxy-searchmark-groups-inner-holder wxy-searchmark-entry-group-container wxy-searchmark-tab-content">Loading searchmark...<!-- [][][][] GROUPS ENTRIES GET ADDED HERE [][][][] --></div>
+					
+					<!-- =================================================================== -->
+					
+					<!-- group bottom drop target --><div class="wxy-searchmark-bottom-drop-target wxy-searchmark-drop-target"><div class="wxy-searchmark-target-halo-highlight-bottom"></div></div>
+					
+					<!-- =================================================================== -->
+					
+					<!-- groups searchmark CLOSE --></div>
+				
+					<!-- =================================================================== -->
+				
+					<!-- bookmarks search bar OPEN --><div class="wxy-bookmarks-tab-searchbar wxy-searchmark-search-wrapper" title="Type keywords, enter to search.">
+					
+						<!-- hide this option for now --><select id="wxy-searchmark-bookmarks-search" name="wxy-searchmark-bookmarks-search" class="wxy-searchmark-sitesearch-bar-bookmarks-locations wxy-searchmark-select-input" data-wxy-form-default="0" style="display:none !important;">
+						<option value="all">Find All</option>
+						<option value="desc">in desc</option>
+						<option value="title">in urls</option>
+					</select>
+					
+					<!-- search go button --><div class="wxy-searchmark-searchbar-go-btn">go</div>
+					
+					<input id="wxy-bookmarks-tab-searchbar-input" name="wxy-bookmarks-tab-searchbar-input" class="wxy-bookmarks-tab-searchbar-input wxy-searchmark-keywords-input" type="text" value="" /><div class="wxy-bookmarks-tab-clear-btn wxy-searchmark-clear-btn"></div>
+					
+				<!-- bookmarks search bar CLOSE --></div>
+						
+			<!-- Groups Tab CLOSE --></div>
+			<!-- ++++++++++++++++ -->
+		
+		<!-- tabs holder CLOSE --></div>
+		<!-- ................. -->
+		
+		<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+		<!-- close button --><div class="wxy-searchmark-close-bar-holder" style="display:none;"><div class="wxy-searchmark-close-bar">close (x)</div></div>
+		
+		<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+		
+		<!-- groups pointer events mask --><div class="wxy-searchmark-loading-mask">[ loading&hellip; ]<br />if loading takes too long,<br />please reload the page<div class="wxy-searchmark-force-refresh-btn"></div></div>
+
+
+	<!-- tabs wrapper CLOSE --></div>
+	<!-- ++++++++++++++++++ -->
+			
+	<!-- ======================================================================================================================== -->
+
+	<!-- GROUP BLANK ELEMENT --><!-- group unit OPEN --><div class="wxy-searchmark-group-blank wxy-searchmark-is-moveable wxy-searchmark-content-item" style="display:none;" data-wxy-default-width="100%">
+	
+		<!-- inner wrapper OPEN --><div class="wxy-searchmark-group-inner-wrapper wxy-searchmark-group-text-choice-3 wxy-searchmark-group-base-choice-2" data-base-class="wxy-searchmark-group-inner-wrapper">
+	
+		<!-- group active indicator --><div class="wxy-searchmark-group-is-active-flag" title="make folder active/inactive"></div>
+		<!-- group button --><div class="wxy-searchmark-group-button" contenteditable="false"><div class="wxy-searchmark-group-button-label" contenteditable="false">{{group-title}}</div><div class="wxy-searchmark-group-controls-holder"><div class="wxy-searchmark-group-control-settings-btn" title="change folder settings"></div><div class="wxy-searchmark-group-control-duplicate-btn" title="duplicate folder"></div><div class="wxy-searchmark-group-control-trash-btn" title="trash folder"></div></div><div class="wxy-searchmark-group-icon"></div></div>
+		<!-- group content OPEN --><div class="wxy-searchmark-group-content">
+
+			<!-- top drop target --><div class="wxy-searchmark-top-drop-target wxy-searchmark-drop-target"><div class="wxy-searchmark-target-halo-highlight"></div></div>
+							
+			<!-- searchmark only OPEN --><div class="wxy-searchmark-only wxy-searchmark-entry-group-container">{{searchmark-holder}}</div>
+							
+			<!-- bottom drop target --><div class="wxy-searchmark-bottom-drop-target wxy-searchmark-drop-target"><div class="wxy-searchmark-target-halo-highlight-bottom"></div></div>
+
+		<!-- group content CLOSE --></div>
+		
+		<!-- inner wrapper CLOSE --></div>
+		
+		<!-- bottom margin spacer --><div class="wxy-searchmark-content-spacer wxy-searchmark-group-outside-bottom-target wxy-searchmark-drop-target" style="height:5px;"><div class="wxy-searchmark-target-halo-highlight"></div></div>
+		<!-- wxy-searchmark-group-outside-bottom-target wxy-searchmark-drop-target -->
+	<!-- group unit CLOSE --></div>
+	
+	<!-- ======================================================================================================================== -->
+		
+	<!-- BOOKMARK ENTRY BLANK ELEMENT --><!-- bookmark entry --><div class="wxy-searchmark-entry-blank wxy-searchmark-is-moveable wxy-searchmark-drop-target wxy-searchmark-base-choice-1 wxy-searchmark-text-choice-3 wxy-searchmark-content-item" data-base-class="wxy-searchmark-entry wxy-searchmark-is-moveable wxy-searchmark-drop-target wxy-searchmark-content-item" style="display:none;" data-wxy-default-width="98%"><div class="wxy-searchmark-entry-button-label" contenteditable="false"><a href="" class="wxy-searchmark-entry-link" target="_self" contenteditable="false">untitled</a></div><div class="wxy-searchmark-entry-controls-holder"><div class="wxy-searchmark-entry-control-settings-btn" title="bookmark settings"></div><div class="wxy-searchmark-entry-control-view-btn" title="view post preview"></div><div class="wxy-searchmark-entry-control-duplicate-btn" title="duplicate bookmark"></div><div class="wxy-searchmark-entry-control-trash-btn" title="trash bookmark"></div></div><div class="wxy-searchmark-post-id"></div><div class="wxy-searchmark-post-permalink"></div><div class="wxy-searchmark-target-halo-highlight"></div></div>
+						
+	<!-- ======================================================================================================================== -->
+		
+	<!-- HISTORY ENTRY BLANK ELEMENT --><!-- history entry --><div class="wxy-searchmark-history-blank wxy-searchmark-base-choice-2 wxy-searchmark-text-choice-3 wxy-searchmark-content-item" data-base-class="wxy-searchmark-history wxy-searchmark-base-choice-2 wxy-searchmark-text-choice-3 wxy-searchmark-content-item"><div class="wxy-searchmark-history-button-label" contenteditable="false"><div class="wxy-searchmark-history-timestamp">now</div><a href="" class="wxy-searchmark-history-link" contenteditable="false">untitled</a></div><div class="wxy-searchmark-history-controls-holder"><div class="wxy-searchmark-history-control-move-btn" title="move to searchmark tabs"></div><div class="wxy-searchmark-history-control-trash-btn" title="trash history entry"></div></div><div class="wxy-searchmark-post-id"></div><div class="wxy-searchmark-post-permalink"></div></div>
+
+	<!-- ======================================================================================================================== -->
+		
+	<!-- SEARCH BOOKMARK ENTRY BLANK ELEMENT --><!-- search bookmark entry --><div class="wxy-searchmark-search-blank wxy-searchmark-is-moveable wxy-searchmark-drop-target wxy-searchmark-base-choice-1 wxy-searchmark-text-choice-3 wxy-searchmark-content-item" data-base-class="wxy-searchmark-search wxy-searchmark-is-moveable wxy-searchmark-drop-target wxy-searchmark-content-item" style="display:none;" data-wxy-default-width="98%"><div class="wxy-searchmark-search-button-label" contenteditable="false">UNTITLED search form</div><div class="wxy-searchmark-search-controls-holder"><div class="wxy-searchmark-search-control-settings-btn" title="search settings"></div><div class="wxy-searchmark-search-control-duplicate-btn" title="duplicate search"></div><div class="wxy-searchmark-search-control-trash-btn" title="trash search"></div></div><div class="wxy-searchmark-search-form-data"></div><div class="wxy-searchmark-target-halo-highlight"></div></div>
+						
+	<!-- ======================================================================================================================== -->
+
+	<!-- SETTINGS: bookmark entry settings --><div id="wxy-searchmark-entry-settings" class="wxy-searchmark-entry-settings wxy-searchmark-settings-dialogue wxy-searchmark-no-drop-targets">
+	
+		<!-- dialogue title --><div class="wxy-searchmark-settings-namebar wxy-searchmark-is-moveable" data-wxy-searchmark-move-item="parent">BOOKMARK SETTINGS<div class="wxy-searchmark-dialogue-menubar-close-btn"></div></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+	
+	<!-- single item edit fields wrapper OPEN --><div class="wxy-searchmark-single-entry-edit-fields-wrapper" >
+	
+		<!-- edit title --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">title</div><textarea class="wxy-searchmark-entry-title-textarea wxy-searchmark-settings-facet-input"></textarea></div>
+			
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+	
+		<!-- edit url --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">url</div><textarea class="wxy-searchmark-entry-url-textarea wxy-searchmark-settings-facet-input"></textarea></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+		
+		<!-- edit view url --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">view url</div><textarea class="wxy-searchmark-entry-view-url-textarea wxy-searchmark-settings-facet-input"></textarea></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+		
+		<!-- edit post id --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">id#</div><textarea class="wxy-searchmark-entry-post-id-textarea"></textarea></div>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+
+	<!-- single item edit fields wrapper CLOSE --></div>
+		
+		<!-- edit target --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">target</div><select class="wxy-searchmark-entry-target-select wxy-searchmark-select-input"><option value="_self">open in same window</option><option value="_blank">open in new window</option><option value="_parent">open in parent</option><option value="_top">open in top most window</option>
+		</select></div>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer"></div>	
+		
+		<!-- edit text color OPEN --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">text</div>
+		
+		<div class="wxy-searchmark-entry-text-color-holder wxy-searchmark-text-color-holder" style="width:100%;height:auto;position:relative;">
+			<div id="wxy-searchmark-text-choice-1" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-1-swatch"></div>
+			<div id="wxy-searchmark-text-choice-2" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-2-swatch"></div>
+			<div id="wxy-searchmark-text-choice-3" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-3-swatch"></div>
+			<div id="wxy-searchmark-text-choice-4" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-4-swatch"></div>
+			<div id="wxy-searchmark-text-choice-5" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-5-swatch"></div>
+			<div id="wxy-searchmark-text-choice-6" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-6-swatch"></div>
+			<div id="wxy-searchmark-text-choice-7" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-7-swatch"></div>
+			<div id="wxy-searchmark-text-choice-8" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-8-swatch"></div>
+			<div id="wxy-searchmark-text-choice-9" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-9-swatch"></div>
+		</div>
+		
+		<!-- edit text color CLOSE --></div>
+		
+		<!-- edit base color OPEN --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">base</div>
+		
+		<div class="wxy-searchmark-entry-base-color-holder wxy-searchmark-base-color-holder" style="width:100%;height:auto;position:relative;">
+			<div id="wxy-searchmark-base-choice-1" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-1"></div>
+			<div id="wxy-searchmark-base-choice-2" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-2"></div>
+			<div id="wxy-searchmark-base-choice-3" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-3"></div>
+			<div id="wxy-searchmark-base-choice-4" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-4"></div>
+			<div id="wxy-searchmark-base-choice-5" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-5"></div>
+			<div id="wxy-searchmark-base-choice-6" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-6"></div>
+			<div id="wxy-searchmark-base-choice-7" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-7"></div>
+			<div id="wxy-searchmark-base-choice-8" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-8"></div>
+			<div id="wxy-searchmark-base-choice-9" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-9"></div>
+		</div>
+		
+		<!-- edit base color CLOSE --></div>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+				
+		<!-- sample bookmark --><div class="wxy-searchmark-entry-sample" data-base-class="wxy-searchmark-entry-sample">Sample Bookmark</div>
+
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:35px;"></div>
+		
+		<div class="wxy-searchmark-entry-settings-cancel-btn">Cancel (x)</div>
+		<div class="wxy-searchmark-entry-settings-delete-btn">&nbsp;</div>
+		<div class="wxy-searchmark-entry-settings-okay-btn">Okay</div>
+
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:25px;"></div>
+		
+	<!-- bookmark settings CLOSE --></div>
+	
+	<!-- ======================================================================================================================== -->
+
+	<!-- SETTINGS: search entry --><div id="wxy-searchmark-search-settings" class="wxy-searchmark-search-settings wxy-searchmark-settings-dialogue wxy-searchmark-no-drop-targets">
+	
+		<!-- dialogue title --><div class="wxy-searchmark-settings-namebar wxy-searchmark-is-moveable" data-wxy-searchmark-move-item="parent">SEARCH SETTINGS<div class="wxy-searchmark-dialogue-menubar-close-btn"></div></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+	
+	<!-- single item edit fields wrapper OPEN --><div class="wxy-searchmark-single-entry-edit-fields-wrapper" >
+	
+		<!-- edit title --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">title</div><textarea class="wxy-searchmark-search-title-textarea wxy-searchmark-settings-facet-input"></textarea></div>
+	
+	<!-- single item edit fields wrapper CLOSE --></div>
+				
+		<!-- spacer --><div class="wxy-searchmark-spacer"></div>	
+		
+		<!-- edit text color OPEN --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">text</div>
+		
+		<div class="wxy-searchmark-search-text-color-holder wxy-searchmark-text-color-holder" style="width:100%;height:auto;position:relative;">
+			<div id="wxy-searchmark-text-choice-1" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-1-swatch"></div>
+			<div id="wxy-searchmark-text-choice-2" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-2-swatch"></div>
+			<div id="wxy-searchmark-text-choice-3" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-3-swatch"></div>
+			<div id="wxy-searchmark-text-choice-4" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-4-swatch"></div>
+			<div id="wxy-searchmark-text-choice-5" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-5-swatch"></div>
+			<div id="wxy-searchmark-text-choice-6" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-6-swatch"></div>
+			<div id="wxy-searchmark-text-choice-7" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-7-swatch"></div>
+			<div id="wxy-searchmark-text-choice-8" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-8-swatch"></div>
+			<div id="wxy-searchmark-text-choice-9" class="wxy-searchmark-color-swatch wxy-searchmark-text-choice-9-swatch"></div>
+		</div>
+		
+		<!-- edit text color CLOSE --></div>
+		
+		<!-- edit base color OPEN --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">base</div>
+		
+		<div class="wxy-searchmark-search-base-color-holder wxy-searchmark-base-color-holder" style="width:100%;height:auto;position:relative;">
+			<div id="wxy-searchmark-base-choice-1" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-1"></div>
+			<div id="wxy-searchmark-base-choice-2" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-2"></div>
+			<div id="wxy-searchmark-base-choice-3" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-3"></div>
+			<div id="wxy-searchmark-base-choice-4" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-4"></div>
+			<div id="wxy-searchmark-base-choice-5" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-5"></div>
+			<div id="wxy-searchmark-base-choice-6" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-6"></div>
+			<div id="wxy-searchmark-base-choice-7" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-7"></div>
+			<div id="wxy-searchmark-base-choice-8" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-8"></div>
+			<div id="wxy-searchmark-base-choice-9" class="wxy-searchmark-color-swatch wxy-searchmark-base-choice-9"></div>
+		</div>
+		
+		<!-- edit base color CLOSE --></div>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+				
+		<!-- sample bookmark --><div class="wxy-searchmark-search-sample" data-base-class="wxy-searchmark-search-sample">Sample Search</div>
+
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:35px;"></div>
+		
+		<div class="wxy-searchmark-search-settings-cancel-btn">Cancel (x)</div>
+		<div class="wxy-searchmark-search-settings-delete-btn">&nbsp;</div>
+		<div class="wxy-searchmark-search-settings-okay-btn">Okay</div>
+
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:25px;"></div>
+		
+	<!-- search bookmark settings CLOSE --></div>
+	
+	<!-- ======================================================================================================================== -->
+
+	<!-- SETTINGS: bookmark groups --><div id="wxy-searchmark-group-settings" class="wxy-searchmark-group-settings wxy-searchmark-settings-dialogue wxy-searchmark-no-drop-targets">
+	
+		<!-- dialogue title --><div class="wxy-searchmark-settings-namebar wxy-searchmark-is-moveable" data-wxy-searchmark-move-item="parent">FOLDER SETTINGS<div class="wxy-searchmark-dialogue-menubar-close-btn"></div></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+	
+	<!-- single item edit fields wrapper OPEN --><div class="wxy-searchmark-single-entry-edit-fields-wrapper" >
+	
+		<!-- edit title --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">title</div><textarea class="wxy-searchmark-group-title-textarea wxy-searchmark-settings-facet-input"></textarea></div>
+			
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:20px;"></div>
+
+	<!-- single item edit fields wrapper CLOSE --></div>
+		
+		<!-- edit text color OPEN --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">text</div>
+		
+		<div class="wxy-searchmark-group-text-color-holder wxy-searchmark-text-color-holder" style="width:100%;height:auto;position:relative;">
+			<div id="wxy-searchmark-group-text-choice-1" class="wxy-searchmark-color-swatch wxy-searchmark-group-text-choice-1-swatch"></div>
+			<div id="wxy-searchmark-group-text-choice-2" class="wxy-searchmark-color-swatch wxy-searchmark-group-text-choice-2-swatch"></div>
+			<div id="wxy-searchmark-group-text-choice-3" class="wxy-searchmark-color-swatch wxy-searchmark-group-text-choice-3-swatch"></div>
+			<div id="wxy-searchmark-group-text-choice-4" class="wxy-searchmark-color-swatch wxy-searchmark-group-text-choice-4-swatch"></div>
+			<div id="wxy-searchmark-group-text-choice-5" class="wxy-searchmark-color-swatch wxy-searchmark-group-text-choice-5-swatch"></div>
+			<div id="wxy-searchmark-group-text-choice-6" class="wxy-searchmark-color-swatch wxy-searchmark-group-text-choice-6-swatch"></div>
+			<div id="wxy-searchmark-group-text-choice-7" class="wxy-searchmark-color-swatch wxy-searchmark-group-text-choice-7-swatch"></div>
+			<div id="wxy-searchmark-group-text-choice-8" class="wxy-searchmark-color-swatch wxy-searchmark-group-text-choice-8-swatch"></div>
+			<div id="wxy-searchmark-group-text-choice-9" class="wxy-searchmark-color-swatch wxy-searchmark-group-text-choice-9-swatch"></div>
+		</div>
+		
+		<!-- edit text color CLOSE --></div>
+		
+		<!-- edit base color OPEN --><div class="wxy-searchmark-settings-facet-wrapper"><div class="wxy-searchmark-settings-facet-label">base</div>
+		
+		<div class="wxy-searchmark-group-base-color-holder wxy-searchmark-base-color-holder" style="width:100%;height:auto;position:relative;">
+				<div id="wxy-searchmark-group-base-choice-1" class="wxy-searchmark-color-swatch wxy-searchmark-group-base-choice-1"></div>
+			<div id="wxy-searchmark-group-base-choice-2" class="wxy-searchmark-color-swatch wxy-searchmark-group-base-choice-2"></div>
+			<div id="wxy-searchmark-group-base-choice-3" class="wxy-searchmark-color-swatch wxy-searchmark-group-base-choice-3"></div>
+			<div id="wxy-searchmark-group-base-choice-4" class="wxy-searchmark-color-swatch wxy-searchmark-group-base-choice-4"></div>
+			<div id="wxy-searchmark-group-base-choice-5" class="wxy-searchmark-color-swatch wxy-searchmark-group-base-choice-5"></div>
+			<div id="wxy-searchmark-group-base-choice-6" class="wxy-searchmark-color-swatch wxy-searchmark-group-base-choice-6"></div>
+			<div id="wxy-searchmark-group-base-choice-7" class="wxy-searchmark-color-swatch wxy-searchmark-group-base-choice-7"></div>
+			<div id="wxy-searchmark-group-base-choice-8" class="wxy-searchmark-color-swatch wxy-searchmark-group-base-choice-8"></div>
+			<div id="wxy-searchmark-group-base-choice-9" class="wxy-searchmark-color-swatch wxy-searchmark-group-base-choice-9"></div>
+		</div>
+		
+		<!-- edit base color CLOSE --></div>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+				
+		<!-- sample bookmark --><div class="wxy-searchmark-group-sample" data-base-class="wxy-searchmark-group-sample">Sample Folder<div class="wxy-searchmark-group-icon"></div></div>
+		
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:35px;"></div>
+		
+		<div class="wxy-searchmark-group-settings-cancel-btn">Cancel (x)</div>
+		<div class="wxy-searchmark-entry-settings-delete-btn">&nbsp;</div>
+		<div class="wxy-searchmark-group-settings-okay-btn">Okay</div>
+
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:25px;"></div>
+	
+	<!-- group settings CLOSE --></div>
+
+	<!-- ======================================================================================================================== -->
+	
+	<!-- SETTINGS: main menu options OPEN --><div id="wxy-searchmark-options-menu" class="wxy-searchmark-options-menu wxy-searchmark-settings-dialogue wxy-searchmark-no-drop-targets">
+	
+		<!-- dialogue title --><div class="wxy-searchmark-settings-namebar wxy-searchmark-is-moveable" data-wxy-searchmark-move-item="parent">WXY SEARCHMARK OPTIONS<div class="wxy-searchmark-dialogue-menubar-close-btn"></div></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+		
+		<!-- menu options wrapper OPEN --><div class="wxy-searchmark-menu-options-wrapper">
+		
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-preferences"><div class="wxy-searchmark-menu-icon-preferences"></div><div class="wxy-searchmark-main-menu-option-label">Help/settings</div></div>
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-refresh"><div class="wxy-searchmark-menu-icon-refresh"></div><div class="wxy-searchmark-main-menu-option-label">Reload Bookmarks from database</div></div>
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-reset-menus"><div class="wxy-searchmark-menu-icon-refresh"></div><div class="wxy-searchmark-main-menu-option-label">Reset menu/dialogue locations</div></div>
+			
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-clear-all"><div class="wxy-searchmark-clear-all-icon"></div><div class="wxy-searchmark-main-menu-option-label" style="color:#F00;">Clear Saved Bookmarks</div></div>
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-clear-history"><div class="wxy-searchmark-clear-all-icon"></div><div class="wxy-searchmark-main-menu-option-label">Empty History tab</div></div>
+			
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-download"><div class="wxy-searchmark-menu-icon-download"></div><div class="wxy-searchmark-main-menu-option-label">Download Bookmarks</div></div>		
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-upload"><div class="wxy-searchmark-menu-icon-upload"></div><div class="wxy-searchmark-main-menu-option-label">Import Bookmarks</div></div>
+			
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-view-html"><div class="wxy-searchmark-menu-icon-view-html"></div><div class="wxy-searchmark-main-menu-option-label">Edit Bookmarks HTML</div></div>
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-bug-report"><div class="wxy-searchmark-menu-icon-bug-report"></div><div class="wxy-searchmark-main-menu-option-label">Report a WXY Searchmark bug</div></div>
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-contribute"><div class="wxy-searchmark-menu-icon-contribute"></div><div class="wxy-searchmark-main-menu-option-label">Contribute to WXY Searchmark</div></div>
+			<!-- menu option --><div class="wxy-searchmark-main-menu-option wxy-searchmark-main-menu-option-review"><div class="wxy-searchmark-menu-icon-review"></div><div class="wxy-searchmark-main-menu-option-label">Review or rate us!</div></div>
+		<!-- menu options wrapper CLOSE --></div>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer"></div>
+		
+		<!-- wxy-tools-logo --><div class="wxy-searchmark-tools-logo"><a href="http://www.wxytools.com" class="wxy-searchmark-tools-logo-link"></a></div>
+		<!-- wxy tools copyright --><div class="wxy-searchmark-copyright"><a href="http://www.wxytools.com" class="wxy-searchmark-inherit-link">&copy;2016-Present WXY Tools.com, all rights reserved.</a></div>
+		<!-- wxy-tools-version --><div class="wxy-searchmark-version-info"></div>
+		
+		<!-- close button --><div class="wxy-searchmark-close-bar-holder"><div class="wxy-searchmark-options-close-bar">close (x)</div></div>
+
+	<!-- main menu options CLOSE --></div>
+	
+	<!-- ======================================================================================================================== -->
+
+	<!-- VIEW HTML: view bookmarks raw html OPEN --><div id="wxy-searchmark-view-html-dialogue" class="wxy-searchmark-view-html-dialogue wxy-searchmark-settings-dialogue wxy-searchmark-no-drop-targets">
+	
+		<!-- dialogue title --><div class="wxy-searchmark-settings-namebar wxy-searchmark-is-moveable" data-wxy-searchmark-move-item="parent">Bookmarks Raw HTML<div class="wxy-searchmark-dialogue-menubar-close-btn"></div></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+
+		<!-- html holder --><textarea class="wxy-searchmark-view-html-textarea"></textarea>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:35px;"></div>
+		
+		<div class="wxy-searchmark-view-html-cancel-btn">Cancel (x)</div>
+		<div class="wxy-searchmark-options-btn-spacer" style="width:165px;"></div>
+		<div class="wxy-searchmark-view-html-okay-btn">Okay</div>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:25px;"></div>
+
+	<!-- main menu options CLOSE --></div>
+	
+	<!-- ======================================================================================================================== -->
+
+	<!-- VIEW LINKS: view links from search as HTML OPEN --><div id="wxy-searchmark-view-links-dialogue" class="wxy-searchmark-view-links-dialogue wxy-searchmark-settings-dialogue wxy-searchmark-no-drop-targets">
+	
+		<!-- dialogue title --><div class="wxy-searchmark-settings-namebar wxy-searchmark-is-moveable" data-wxy-searchmark-move-item="parent">Bookmarks Raw HTML<div class="wxy-searchmark-dialogue-menubar-close-btn"></div></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+
+		<!-- html holder --><textarea class="wxy-searchmark-view-links-textarea"></textarea>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:35px;"></div>
+		
+		<div class="wxy-searchmark-view-html-cancel-btn">Close (x)</div>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:25px;"></div>
+
+	<!-- VIEW LINKS: view links from search as HTML CLOSE --></div>
+	
+	<!-- ======================================================================================================================== -->
+	
+	<!-- pointer events mask --><div class="wxy-searchmark-pointer-events-mask"></div>
+
+	<!-- ======================================================================================================================== -->
+
+	<!-- UPLOAD: upload file dialogue OPEN --><div id="wxy-searchmark-upload-dialogue" class="wxy-searchmark-upload-dialogue wxy-searchmark-settings-dialogue wxy-searchmark-no-drop-targets">
+	
+		<!-- dialogue title --><div class="wxy-searchmark-settings-namebar wxy-searchmark-is-moveable" data-wxy-searchmark-move-item="parent">IMPORT BOOKMARKS<div class="wxy-searchmark-dialogue-menubar-close-btn"></div></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:30px;"></div>
+		
+		<div class="wxy-searchmark-upload-msg">Bookmarks file must be a ZIP archive.</div>
+
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+		
+		<!-- ++++++++++++++++++++++++++++++++++ -->
+		<!-- form for server-side requests OPEN --><form id="wxy-searchmark-data-form" class="wxy-searchmark-data-form" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="action" id="action" value="wxy_searchmark_request" />
+			<input type="hidden" name="wxy-searchmark-nonce" id="wxy-searchmark-nonce" value="" />
+			<input type="hidden" name="wxy-searchmark-action" id="wxy-searchmark-action" value="" />
+			<input type="hidden" name="wxy-searchmark-data" id="wxy-searchmark-data" value="" />
+			<input type="hidden" name="wxy-searchmark-user" id="wxy-searchmark-user" value="" />
+			<input type="hidden" name="wxy-searchmark-blank" id="wxy-searchmark-blank" value="" />
+			<input type="hidden" name="wxy-searchmark-retries" id="wxy-searchmark-retries" value="" />
+			<input type="file" name="wxy-searchmark-file" id="wxy-searchmark-file" multiple="false" accept="application/zip" class="wxy-searchmark-upload-input" />
+		<!-- form for server-side requests CLOSE --></form>
+		<!-- +++++++++++++++++++++++++++++++++++ -->
+
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:35px;"></div>
+		
+		<div class="wxy-searchmark-upload-okay-btn">Import</div>
+		<div class="wxy-searchmark-options-btn-spacer"></div>
+		<div class="wxy-searchmark-upload-cancel-btn">Cancel (x)</div>
+
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:25px;"></div>
+
+	<!-- upload file dialogue CLOSE --></div>
+	
+	<!-- ======================================================================================================================== -->
+	
+	<!-- for download redirection --><iframe id="wxy-searchmark-download-iframe" name="wxy-searchmark-download-iframe" style="width:100px;height:5px;display:none;position:fixed;left:300px;top:130px;z-index:99999;border:solid 1px #FFF;padding:20px;background-color:#FFF;"></iframe>
+	
+	<!-- ======================================================================================================================== -->
+	
+	<!-- for bookmark and group copy-paste --><div id="wxy-searchmark-pastebox" class="wxy-searchmark-pastebox"></div>
+
+	<!-- ======================================================================================================================== -->
+	
+	<!-- SEARCH: bookmarks only search OPEN --><div id="wxy-searchmark-bookmarks-search-results" class="wxy-searchmark-search-results-dialogue wxy-searchmark-settings-dialogue wxy-searchmark-no-drop-targets">
+	
+		<!-- dialogue title --><div id="wxy-searchmark-search-results-title" class="wxy-searchmark-settings-namebar wxy-searchmark-is-moveable" data-wxy-searchmark-move-item="parent"><div class="wxy-searchmark-search-result-count-label">BOOKMARKS SEARCH RESULTS (0)</div><div class="wxy-searchmark-dialogue-menubar-close-btn wxy-searchmark-search-results-close-button"></div></div>
+	
+		<!-- spacer --><div class="wxy-searchmark-spacer" style="height:10px;"></div>
+	
+		<!-- bookmarks search results holder OPEN --><div id="wxy-bookmarks-search-results-wrapper" class="wxy-bookmarks-search-results-wrapper"><!-- [][][][][][][] BOOKARKS SEARCH RESULTS GO HERE [][][][][][][][] --></div>
+		
+		<!-- spacer --><div class="wxy-searchmark-spacer"></div>
+
+		<!-- close button --><div class="wxy-searchmark-close-bar-holder"><div class="wxy-searchmark-search-results-close-bar wxy-searchmark-search-results-close-button">close (x)</div></div>
+
+	<!-- main menu options CLOSE --></div>
+	
+<!-- ======================================================================================================================== -->
+
+<!-- no results message --><div id="wxy-searchmark-no-result-msg" class="wxy-searchmark-no-result-msg"></div>
+<!-- folders found message --><div id="wxy-searchmark-search-folders-found-msg" class="wxy-searchmark-search-folders-found-msg"></div>
+
+<!-- search result placeholder --><div class="wxy-searchmark-search-placeholder-blank"></div>
+
+	
+<!-- widget CLOSE --></div>
+<!-- ============ -->
